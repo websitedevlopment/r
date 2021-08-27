@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ 
+  <p id="result"></p>
+  <script>
+    var counter=12;
+    //  var str=`<iframe src=\"http://results.ietdavv.edu.in/DisplayStudentResult?rollno=19C31${counter}&typeOfStudent=Regular\" frameborder=\"0\" width=\"1100\" height=\"900\"></iframe>`;
+    var backup;
+    // document.getElementById('result').innerHTML=str;
+    while(counter<=70)
+    {
+      // document.getElementById('result').innerHTML;
+      // var update=document.createTextNode(str);
+      // result.appendChild(update);
+      
+      document.write(`<iframe src=\"http://results.ietdavv.edu.in/DisplayStudentResult?rollno=19C31${counter}&typeOfStudent=Regular\" frameborder=\"0\" width=\"1100\" height=\"900\"></iframe>`);
+      counter++;
+      // document.getElementById('result').innerHTML=str;
+    }
+  </script>
+</body>
+</html>
